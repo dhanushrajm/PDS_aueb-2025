@@ -1,4 +1,3 @@
-//for api, check line 204 and 220
 <!DOCTYPE html>
 <html lang="en" class="h-full bg-gray-50">
 <head>
@@ -202,13 +201,13 @@
         
         // --- FIREBASE CONFIG & APP ID ---
         const firebaseConfig = {
-          apiKey: "", //Firebase API
-          authDomain: "walksafe-1f6c9.firebaseapp.com",
-          projectId: "walksafe-1f6c9",
-          storageBucket: "walksafe-1f6c9.firebasestorage.app",
-          messagingSenderId: "1063060269742",
-          appId: "1:1063060269742:web:85cacfa32a1c643caa1b3f",
-          measurementId: "G-S8SQJRHJ2E"
+          apiKey: "AIzaSyAj8TqAnsslXyA3CFqvMi4zgA_eUXD4RAg", //Firebase API
+          authDomain: "aiwalk.firebaseapp.com",
+          projectId: "aiwalk",
+          storageBucket: "aiwalk.firebasestorage.app",
+          messagingSenderId: "153241976898",
+          appId: "1:153241976898:web:9886a93a28af5d8b3b6ddb",
+          measurementId: "G-WJJY4ZQF5V"
         };
         
         const effectiveConfig = (typeof __firebase_config !== 'undefined') 
@@ -218,7 +217,7 @@
         const appId = typeof __app_id !== 'undefined' ? __app_id : 'walksafe-prototype';
 
         // --- GEMINI API CONFIG ---
-        const apiKey = ""; //Gemini API
+        const apiKey = "{{ api_key }}"; // to hide
         const geminiModel = "gemini-2.5-flash-preview-09-2025";
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${geminiModel}:generateContent?key=${apiKey}`;
 
